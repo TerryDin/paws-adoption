@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paws Adoption - Find your new best friend. Adopt a pet and give them a loving forever home.">
+  <title>Paws Adoption - Find Your New Best Friend</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="p-header">
+    <div class="p-header__inner">
+      <a href="index.html" class="p-header__logo">Paws <span>Adoption</span></a>
+      <nav class="p-header__nav" aria-label="Main navigation">
+        <a href="index.html" class="p-header__link p-header__link--active">Home</a>
+        <a href="browse.html" class="p-header__link">Browse Pets</a>
+        <a href="stories.html" class="p-header__link">Success Stories</a>
+        <a href="about.html" class="p-header__link">About</a>
+        <a href="contact.html" class="p-header__link">Contact</a>
+        <a href="apply.html" class="p-header__link p-header__cta">Apply to Adopt</a>
+      </nav>
+      <button class="p-nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="p-hero">
+      <div class="p-container">
+        <h1 class="p-hero__title">Find Your New Best Friend</h1>
+        <p class="p-hero__subtitle">Every pet deserves a loving home. Browse our adoptable pets and start your journey toward a lifetime of love and companionship.</p>
+        <div class="p-hero__cta">
+          <a href="browse.html" class="p-btn p-btn--accent p-btn--lg">Browse Pets</a>
+          <a href="apply.html" class="p-btn p-btn--secondary p-btn--lg" style="border-color:#fff;color:#fff;">Start Your Journey</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="p-stats">
+      <div class="p-stats__grid">
+        <div class="p-stat__item">
+          <div class="p-stat__number">500+</div>
+          <div class="p-stat__label">Pets Adopted</div>
+        </div>
+        <div class="p-stat__item">
+          <div class="p-stat__number">10+</div>
+          <div class="p-stat__label">Years of Service</div>
+        </div>
+        <div class="p-stat__item">
+          <div class="p-stat__number">200+</div>
+          <div class="p-stat__label">Pets Available</div>
+        </div>
+        <div class="p-stat__item">
+          <div class="p-stat__number">50+</div>
+          <div class="p-stat__label">Volunteers</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Pets -->
+    <section class="p-section">
+      <div class="p-container">
+        <h2 class="p-section__title">Meet Our Featured Pets</h2>
+        <p class="p-section__subtitle">These wonderful animals are looking for their forever homes. Could you be the one?</p>
+        <div class="p-grid p-featured" id="featured-pets-grid"></div>
+      </div>
+    </section>
+
+    <!-- Success Stories Preview -->
+    <section class="p-section" style="background:var(--color-bg-alt);">
+      <div class="p-container">
+        <h2 class="p-section__title">Happy Tails</h2>
+        <p class="p-section__subtitle">Read heartwarming stories of pets who found their forever families.</p>
+        <div class="p-grid" id="stories-preview-grid">
+          <div class="p-story-card">
+            <div class="p-story-card__images">
+              <img src="https://picsum.photos/seed/max-before/400/300" alt="Max before adoption" loading="lazy">
+              <img src="https://picsum.photos/seed/max-after/400/300" alt="Max after adoption" loading="lazy">
+            </div>
+            <div class="p-story-card__body">
+              <h3 class="p-story-card__title">Max</h3>
+              <p class="p-story-card__adopters">Adopted by The Johnson Family</p>
+              <p class="p-story-card__excerpt">Max went from a shy rescue to a beloved family member who brings joy to everyone he meets.</p>
+              <a href="stories.html" class="p-card__link">Read More Stories &rarr;</a>
+            </div>
+          </div>
+          <div class="p-story-card">
+            <div class="p-story-card__images">
+              <img src="https://picsum.photos/seed/cleo-before/400/300" alt="Cleo before adoption" loading="lazy">
+              <img src="https://picsum.photos/seed/cleo-after/400/300" alt="Cleo after adoption" loading="lazy">
+            </div>
+            <div class="p-story-card__body">
+              <h3 class="p-story-card__title">Cleo</h3>
+              <p class="p-story-card__adopters">Adopted by Sarah &amp; David</p>
+              <p class="p-story-card__excerpt">What started as a foster turned into a forever home. Cleo chose us as much as we chose her.</p>
+              <a href="stories.html" class="p-card__link">Read More Stories &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="p-section" style="text-align:center;">
+      <div class="p-container">
+        <h2 class="p-section__title">Ready to Adopt?</h2>
+        <p class="p-section__subtitle">Every adoption changes two lives &mdash; yours and theirs. Take the first step today.</p>
+        <a href="apply.html" class="p-btn p-btn--primary p-btn--lg" style="margin-top:0.5rem;">Start Your Journey</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="p-footer">
+    <div class="p-footer__grid">
+      <div class="p-footer__col">
+        <h4>Paws Adoption</h4>
+        <p>We're a non-profit pet adoption organization dedicated to rescuing and rehoming pets in need. Every animal deserves a second chance at happiness.</p>
+      </div>
+      <div class="p-footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html" class="p-footer__link">Home</a>
+        <a href="browse.html" class="p-footer__link">Browse Pets</a>
+        <a href="stories.html" class="p-footer__link">Success Stories</a>
+        <a href="about.html" class="p-footer__link">About Us</a>
+        <a href="contact.html" class="p-footer__link">Contact</a>
+      </div>
+      <div class="p-footer__col">
+        <h4>Contact Info</h4>
+        <p>123 Paws Lane, Petville<br>CA 90210</p>
+        <p>(555) 123-PAWS</p>
+        <p>hello@pawsadoption.org</p>
+      </div>
+      <div class="p-footer__col">
+        <h4>Visit Us</h4>
+        <p><strong>Mon &ndash; Fri:</strong> 10am &ndash; 6pm</p>
+        <p><strong>Saturday:</strong> 10am &ndash; 4pm</p>
+        <p><strong>Sunday:</strong> Closed</p>
+      </div>
+    </div>
+    <div class="p-footer__bottom">
+      &copy; 2026 Paws Adoption. All rights reserved. Made with love for pets.
+    </div>
+  </footer>
+
+  <script src="js/pets.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var grid = document.getElementById('featured-pets-grid');
+      if (!grid) return;
+      var featured = [];
+      for (var i = 0; i < petsData.length; i++) {
+        if (petsData[i].isFeatured) {
+          featured.push(petsData[i]);
+        }
+      }
+      featured.forEach(function(pet) {
+        grid.insertAdjacentHTML('beforeend', renderPetCard(pet));
+      });
+    });
+  </script>
+</body>
+</html>

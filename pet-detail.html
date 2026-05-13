@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pet profile - learn more about this adoptable pet at Paws Adoption.">
+  <title>Pet Profile - Paws Adoption</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="p-header">
+    <div class="p-header__inner">
+      <a href="index.html" class="p-header__logo">Paws <span>Adoption</span></a>
+      <nav class="p-header__nav" aria-label="Main navigation">
+        <a href="index.html" class="p-header__link">Home</a>
+        <a href="browse.html" class="p-header__link p-header__link--active">Browse Pets</a>
+        <a href="stories.html" class="p-header__link">Success Stories</a>
+        <a href="about.html" class="p-header__link">About</a>
+        <a href="contact.html" class="p-header__link">Contact</a>
+        <a href="apply.html" class="p-header__link p-header__cta">Apply to Adopt</a>
+      </nav>
+      <button class="p-nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Pet Detail -->
+    <section class="p-pet-detail">
+      <div>
+        <img class="p-pet-detail__image" src="https://picsum.photos/seed/default-pet/600/450" alt="Pet photo">
+      </div>
+      <div>
+        <a href="browse.html" style="font-size:0.9rem;color:var(--color-text-light);">&larr; Back to Browse</a>
+        <h1 class="p-pet-detail__name" style="margin-top:0.5rem;">Loading...</h1>
+        <p class="p-pet-detail__breed" style="color:var(--color-text-light);font-size:1.05rem;margin-bottom:0.5rem;"></p>
+        <div class="p-pet-detail__meta"></div>
+
+        <div class="p-pet-detail__info">
+          <p><strong>Age:</strong> <span class="p-pet-detail__age"></span></p>
+          <p><strong>Gender:</strong> <span class="p-pet-detail__gender"></span></p>
+          <p><strong>Size:</strong> <span class="p-pet-detail__size"></span></p>
+          <p><strong>Color:</strong> <span class="p-pet-detail__color"></span></p>
+        </div>
+
+        <h4>Personality</h4>
+        <div class="p-pet-detail__personality"></div>
+
+        <h4>About</h4>
+        <div class="p-pet-detail__description"></div>
+
+        <div class="p-pet-detail__fee"></div>
+
+        <div class="p-pet-detail__actions">
+          <a href="apply.html" class="p-btn p-btn--accent p-btn--lg">Apply to Adopt</a>
+          <a href="browse.html" class="p-btn p-btn--secondary">Browse More Pets</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Similar Pets -->
+    <section class="p-section" style="padding-top:0;">
+      <div class="p-container">
+        <h2 class="p-section__title">Similar Pets</h2>
+        <div class="p-grid p-similar-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="p-footer">
+    <div class="p-footer__grid">
+      <div class="p-footer__col">
+        <h4>Paws Adoption</h4>
+        <p>We're a non-profit pet adoption organization dedicated to rescuing and rehoming pets in need. Every animal deserves a second chance at happiness.</p>
+      </div>
+      <div class="p-footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html" class="p-footer__link">Home</a>
+        <a href="browse.html" class="p-footer__link">Browse Pets</a>
+        <a href="stories.html" class="p-footer__link">Success Stories</a>
+        <a href="about.html" class="p-footer__link">About Us</a>
+        <a href="contact.html" class="p-footer__link">Contact</a>
+      </div>
+      <div class="p-footer__col">
+        <h4>Contact Info</h4>
+        <p>123 Paws Lane, Petville<br>CA 90210</p>
+        <p>(555) 123-PAWS</p>
+        <p>hello@pawsadoption.org</p>
+      </div>
+      <div class="p-footer__col">
+        <h4>Visit Us</h4>
+        <p><strong>Mon &ndash; Fri:</strong> 10am &ndash; 6pm</p>
+        <p><strong>Saturday:</strong> 10am &ndash; 4pm</p>
+        <p><strong>Sunday:</strong> Closed</p>
+      </div>
+    </div>
+    <div class="p-footer__bottom">
+      &copy; 2026 Paws Adoption. All rights reserved. Made with love for pets.
+    </div>
+  </footer>
+
+  <script src="js/pets.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

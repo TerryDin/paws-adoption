@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit an adoption application to Paws Adoption. Tell us about yourself and find your perfect pet match.">
+  <title>Adoption Application - Paws Adoption</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="p-header">
+    <div class="p-header__inner">
+      <a href="index.html" class="p-header__logo">Paws <span>Adoption</span></a>
+      <nav class="p-header__nav" aria-label="Main navigation">
+        <a href="index.html" class="p-header__link">Home</a>
+        <a href="browse.html" class="p-header__link">Browse Pets</a>
+        <a href="stories.html" class="p-header__link">Success Stories</a>
+        <a href="about.html" class="p-header__link">About</a>
+        <a href="contact.html" class="p-header__link">Contact</a>
+        <a href="apply.html" class="p-header__link p-header__cta p-header__link--active">Apply to Adopt</a>
+      </nav>
+      <button class="p-nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="p-page-header">
+      <div class="p-container">
+        <h1 class="p-page-header__title">Adoption Application</h1>
+        <p class="p-page-header__text">Tell us about yourself and your home. We'll match you with the perfect pet and be in touch within 2&ndash;3 business days.</p>
+      </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="p-section">
+      <div class="p-container">
+        <form class="p-form" id="adoption-form" novalidate>
+          <!-- Section 1: Your Information -->
+          <div class="p-form__section">
+            <h3 class="p-form__section-title">Your Information</h3>
+            <div class="p-form__row">
+              <div class="p-form__group">
+                <label class="p-form__label" for="first-name">First Name <span class="p-form__required">*</span></label>
+                <input class="p-form__input" type="text" id="first-name" name="firstName" placeholder="Enter your first name" required>
+                <p class="p-form__error">Please enter your first name.</p>
+              </div>
+              <div class="p-form__group">
+                <label class="p-form__label" for="last-name">Last Name <span class="p-form__required">*</span></label>
+                <input class="p-form__input" type="text" id="last-name" name="lastName" placeholder="Enter your last name" required>
+                <p class="p-form__error">Please enter your last name.</p>
+              </div>
+            </div>
+            <div class="p-form__row">
+              <div class="p-form__group">
+                <label class="p-form__label" for="email">Email Address <span class="p-form__required">*</span></label>
+                <input class="p-form__input" type="email" id="email" name="email" placeholder="your@email.com" required>
+                <p class="p-form__error">Please enter a valid email address.</p>
+              </div>
+              <div class="p-form__group">
+                <label class="p-form__label" for="phone">Phone Number <span class="p-form__required">*</span></label>
+                <input class="p-form__input" type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                <p class="p-form__error">Please enter a valid phone number (10+ digits).</p>
+              </div>
+            </div>
+            <div class="p-form__group">
+              <label class="p-form__label" for="address">Street Address <span class="p-form__required">*</span></label>
+              <input class="p-form__input" type="text" id="address" name="address" placeholder="123 Main Street" required>
+              <p class="p-form__error">Please enter your street address.</p>
+            </div>
+            <div class="p-form__row">
+              <div class="p-form__group">
+                <label class="p-form__label" for="city">City <span class="p-form__required">*</span></label>
+                <input class="p-form__input" type="text" id="city" name="city" placeholder="Your city" required>
+                <p class="p-form__error">Please enter your city.</p>
+              </div>
+              <div class="p-form__group">
+                <label class="p-form__label" for="state">State <span class="p-form__required">*</span></label>
+                <select class="p-form__select" id="state" name="state" required>
+                  <option value="">Select state...</option>
+                  <option value="CA">California</option>
+                  <option value="NY">New York</option>
+                  <option value="TX">Texas</option>
+                  <option value="FL">Florida</option>
+                  <option value="IL">Illinois</option>
+                  <option value="WA">Washington</option>
+                  <option value="OR">Oregon</option>
+                  <option value="CO">Colorado</option>
+                  <option value="Other">Other</option>
+                </select>
+                <p class="p-form__error">Please select your state.</p>
+              </div>
+            </div>
+            <div class="p-form__group">
+              <label class="p-form__label" for="zip">ZIP Code <span class="p-form__required">*</span></label>
+              <input class="p-form__input" type="text" id="zip" name="zip" placeholder="90210" required>
+              <p class="p-form__error">Please enter your ZIP code.</p>
+            </div>
+          </div>
+
+          <!-- Section 2: Home Environment -->
+          <div class="p-form__section">
+            <h3 class="p-form__section-title">Home Environment</h3>
+            <div class="p-form__group">
+              <label class="p-form__label" for="home-type">Type of Home <span class="p-form__required">*</span></label>
+              <select class="p-form__select" id="home-type" name="homeType" required>
+                <option value="">Select...</option>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="condo">Condo/Townhouse</option>
+              </select>
+              <p class="p-form__error">Please select your home type.</p>
+            </div>
+            <div class="p-form__row">
+              <div class="p-form__group">
+                <label class="p-form__label">Own or Rent? <span class="p-form__required">*</span></label>
+                <select class="p-form__select" id="own-rent" name="ownRent" required>
+                  <option value="">Select...</option>
+                  <option value="own">I own my home</option>
+                  <option value="rent">I rent</option>
+                </select>
+                <p class="p-form__error">Please select one.</p>
+              </div>
+              <div class="p-form__group">
+                <label class="p-form__label">Do you have a yard?</label>
+                <select class="p-form__select" name="yard">
+                  <option value="no">No yard</option>
+                  <option value="yes">Yes, unfenced</option>
+                  <option value="fenced">Yes, fenced</option>
+                </select>
+              </div>
+            </div>
+            <div class="p-form__row">
+              <div class="p-form__group">
+                <label class="p-form__label">Children in Home? <span class="p-form__required">*</span></label>
+                <select class="p-form__select" name="children" required>
+                  <option value="">Select...</option>
+                  <option value="no">No children</option>
+                  <option value="infant">Yes, infant/toddler</option>
+                  <option value="child">Yes, child (4&ndash;12)</option>
+                  <option value="teen">Yes, teenager</option>
+                </select>
+                <p class="p-form__error">Please select one.</p>
+              </div>
+              <div class="p-form__group">
+                <label class="p-form__label">Other Pets?</label>
+                <select class="p-form__select" name="otherPets">
+                  <option value="no">No other pets</option>
+                  <option value="dog">Yes, dog(s)</option>
+                  <option value="cat">Yes, cat(s)</option>
+                  <option value="both">Yes, dogs and cats</option>
+                  <option value="other">Yes, other pets</option>
+                </select>
+              </div>
+            </div>
+            <div class="p-form__group">
+              <label class="p-form__label" for="pet-details">If you have other pets, please describe them:</label>
+              <textarea class="p-form__textarea" id="pet-details" name="petDetails" placeholder="Type, age, temperament of your current pets..."></textarea>
+            </div>
+          </div>
+
+          <!-- Section 3: Pet Experience -->
+          <div class="p-form__section">
+            <h3 class="p-form__section-title">Pet Experience</h3>
+            <div class="p-form__row">
+              <div class="p-form__group">
+                <label class="p-form__label">Have you owned pets before? <span class="p-form__required">*</span></label>
+                <select class="p-form__select" name="ownedBefore" required>
+                  <option value="">Select...</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No, this would be my first</option>
+                </select>
+                <p class="p-form__error">Please select one.</p>
+              </div>
+              <div class="p-form__group">
+                <label class="p-form__label" for="vet-ref">Veterinarian Reference</label>
+                <input class="p-form__input" type="text" id="vet-ref" name="vetRef" placeholder="Vet name and phone (if applicable)">
+              </div>
+            </div>
+            <div class="p-form__group">
+              <label class="p-form__label" for="pet-history">Tell us about your current or previous pets:</label>
+              <textarea class="p-form__textarea" id="pet-history" name="petHistory" placeholder="What kind of pets have you cared for? What happened to them? Any details help us understand your experience."></textarea>
+            </div>
+          </div>
+
+          <!-- Section 4: Your Interest -->
+          <div class="p-form__section">
+            <h3 class="p-form__section-title">About Your Interest</h3>
+            <div class="p-form__group">
+              <label class="p-form__label" for="pet-select">Which pet are you interested in? <span class="p-form__required">*</span></label>
+              <select class="p-form__select" id="pet-select" name="interestPetId">
+                <option value="">Browse pets and select one...</option>
+              </select>
+              <p class="p-form__error">Please select the pet you're interested in.</p>
+            </div>
+            <div class="p-form__group">
+              <label class="p-form__label" for="why-adopt">Why do you want to adopt? <span class="p-form__required">*</span></label>
+              <textarea class="p-form__textarea" id="why-adopt" name="whyAdopt" placeholder="Tell us about your lifestyle, why you're interested in adopting, and what kind of home you can offer..." required></textarea>
+              <p class="p-form__error">Please tell us why you'd like to adopt.</p>
+            </div>
+          </div>
+
+          <!-- Agreement -->
+          <div class="p-form__checkbox">
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">I understand the adoption fee and agree to provide a safe, loving, and responsible home for my new pet. I acknowledge that Paws Adoption may follow up after adoption to ensure the well-being of the pet. <span style="color:var(--color-error);">*</span></label>
+          </div>
+
+          <button type="submit" class="p-btn p-btn--primary p-btn--lg" style="display:block;width:100%;">Submit Application</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="p-footer">
+    <div class="p-footer__grid">
+      <div class="p-footer__col">
+        <h4>Paws Adoption</h4>
+        <p>We're a non-profit pet adoption organization dedicated to rescuing and rehoming pets in need. Every animal deserves a second chance at happiness.</p>
+      </div>
+      <div class="p-footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html" class="p-footer__link">Home</a>
+        <a href="browse.html" class="p-footer__link">Browse Pets</a>
+        <a href="stories.html" class="p-footer__link">Success Stories</a>
+        <a href="about.html" class="p-footer__link">About Us</a>
+        <a href="contact.html" class="p-footer__link">Contact</a>
+      </div>
+      <div class="p-footer__col">
+        <h4>Contact Info</h4>
+        <p>123 Paws Lane, Petville<br>CA 90210</p>
+        <p>(555) 123-PAWS</p>
+        <p>hello@pawsadoption.org</p>
+      </div>
+      <div class="p-footer__col">
+        <h4>Visit Us</h4>
+        <p><strong>Mon &ndash; Fri:</strong> 10am &ndash; 6pm</p>
+        <p><strong>Saturday:</strong> 10am &ndash; 4pm</p>
+        <p><strong>Sunday:</strong> Closed</p>
+      </div>
+    </div>
+    <div class="p-footer__bottom">
+      &copy; 2026 Paws Adoption. All rights reserved. Made with love for pets.
+    </div>
+  </footer>
+
+  <script src="js/pets.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
